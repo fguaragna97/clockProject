@@ -1,15 +1,14 @@
 //we need to use transform rotate for the clock hands , and give transition timing function
 
-async function getData(Hours, minutes, seconds) {
-  const response = await fetch("http://worldtimeapi.org/api/ip");
-  return await response.json();
-}
-
 window.addEventListener("load", async () => {
   try {
-    const data = await getData();
+    const day = new Date("July 20, 69 00:20:18");
 
-    console.log(data);
+    let hours = day.getHours();
+    let minutes = day.getMinutes();
+    let seconds = day.getSeconds();
+    // const data = await getData();
+    console.log(hours, minutes, seconds);
   } catch (error) {
     console.error(error);
   }
