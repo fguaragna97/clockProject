@@ -1,5 +1,5 @@
 # clockProject
 
-making a clock with HTML,CSS and JS
+making a clock with HTML,CSS and JS that works with your timezone
 
-![preview](./clock.png)
+![preview](./Clock.png)
